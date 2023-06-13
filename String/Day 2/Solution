@@ -1,0 +1,33 @@
+
+
+public class Shortest_path {
+
+    public static void solution(String str){
+        int x=0,y=0,xx=0,yy=0;
+        String East = "E";
+
+        for (int i =0;i<str.length();i++){
+            if (str.charAt(i)=='E'){
+                x++;
+            }
+            else if (str.charAt(i)== 'W'){
+                x--;
+            }
+            else if (str.charAt(i)== 'N'){
+                y++;
+            }
+            else{
+                y--;
+            }
+        }
+        int X = (x-xx);
+        int Y = (y-yy);
+        int formula = ( X * X ) + (Y * Y);
+        double Ans = Math.sqrt(formula);
+        System.out.println(Ans);
+    }
+    public static void main(String[] args) {
+        String str = "WNEENESENNN";
+        solution(str);
+    }
+}
