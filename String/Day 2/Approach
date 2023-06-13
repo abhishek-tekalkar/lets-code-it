@@ -1,0 +1,4 @@
+Assume four direction as Four Quadrants. East and west on X axis while north and south on y axis. if person goes towards west then X-1,if east then X+1,if north then y+1,if south then y-1
+now initial points are (x,y)=(0,0);
+final destination we will get through loop of conditions (x1,y1);
+then formula = sqrt((x1-x)(x1-x)+(y1-y)(y1-y)
